@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картографические материалы Красноярского края и СФО</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 250mm;
+            height: 350mm;
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 15mm;
+        }
+        h1 {
+            text-align: center;
+            font-size: 18pt;
+            margin-bottom: 10mm;
+        }
+        h2 {
+            font-size: 14pt;
+            margin-top: 8mm;
+            margin-bottom: 4mm;
+        }
+        .map-container {
+            margin-bottom: 10mm;
+            border: 1px solid #ccc;
+            padding: 5mm;
+            page-break-inside: avoid;
+        }
+        .map-title {
+            font-weight: bold;
+            margin-bottom: 3mm;
+        }
+        .map-content {
+            display: flex;
+        }
+        .map-image {
+            width: 120mm;
+            height: auto;
+            border: 1px solid #eee;
+        }
+        .map-legend {
+            margin-left: 5mm;
+            font-size: 10pt;
+            flex-grow: 1;
+        }
+        .legend-item {
+            margin-bottom: 2mm;
+        }
+        .metadata {
+            font-size: 9pt;
+            margin-top: 3mm;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            font-size: 10pt;
+            margin-top: 10mm;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Картографические материалы Красноярского края и СФО</h1>
+        
+        <div class="map-container">
+            <div class="map-title">1. Обзорная карта СФО данных ресурса NEXTGIS</div>
+            <div class="map-content">
+                <img src="F:\2\NEXTGIS.jpg" alt="Обзорная карта СФО" class="map-image">
+                <div class="map-legend">
+                    <div class="legend-item"><strong>Населенные пункты (по числу жителей):</strong></div>
+                    <div class="legend-item">- 0 - 5,000</div>
+                    <div class="legend-item">- 7,500 - 10,000</div>
+                    <div class="legend-item">- 10,000 - 25,000</div>
+                    <div class="legend-item">- 25,000 - 1,650,000</div>
+                    <div class="legend-item"><strong>Дороги:</strong> Дороги_OSM_2025_line, Дороги_MS_2025_line</div>
+                    <div class="legend-item"><strong>Водные объекты:</strong> Водотоки_СФО_OSM_line, Водоемы_СФО_NaturalEart_poly</div>
+                    <div class="legend-item"><strong>Границы:</strong> Границы субъектов_СФО_poly, Границы_СФО_poly</div>
+                    <div class="legend-item"><strong>Криолитозона:</strong> Современная площадь_криопитозоны_СФО_poly</div>
+                </div>
+            </div>
+            <div class="metadata">
+                <strong>Масштаб:</strong> 1:13,500,000 | <strong>Система координат:</strong> WGS-84 косая азимутальная равноудаленная | <strong>Картограф:</strong> Синицина А.
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div class="map-title">2. Карта заинтересованности субъектов</div>
+            <div class="map-content">
+                <img src="F:\2\Заинтересованность.jpg" alt="Карта заинтересованности" class="map-image">
+                <div class="map-legend">
+                    <div class="legend-item"><strong>Дорожная сеть:</strong> Дорожная сеть постоянного использования СФО_OSM_line</div>
+                    <div class="legend-item"><strong>Водные объекты:</strong> Волосы СФО_OSM_line, Водоемы СФО_NaturalEart_poly</div>
+                    <div class="legend-item"><strong>Готовность субъектов:</strong> Готовность субъектов в сотрудничестве с ГИС</div>
+                    <div class="legend-item"><strong>Дата:</strong> Нет данных</div>
+                </div>
+            </div>
+            <div class="metadata">
+                <strong>Масштаб:</strong> 1:13,500,000 | <strong>Система координат:</strong> WGS-84 косая азимутальная равноудаленная | <strong>Картограф:</strong> Синицина А.
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div class="map-title">3. Обзорная карта Красноярского края</div>
+            <div class="map-content">
+                <img src="F:\2\Красноярский_край.jpg" alt="Карта Красноярского края" class="map-image">
+                <div class="map-legend">
+                    <div class="legend-item"><strong>Населенные пункты (по числу жителей):</strong></div>
+                    <div class="legend-item">- 0 - 5,000</div>
+                    <div class="legend-item">- 5,000 - 75,000</div>
+                    <div class="legend-item">- 75,000 - 10,000</div>
+                    <div class="legend-item">- 10,000 - 25,000</div>
+                    <div class="legend-item">- 25,000 - 165,000</div>
+                    <div class="legend-item"><strong>Дорожная сеть:</strong> Дорожная сеть постоянного использования Красноярский край 2025_OSM_line</div>
+                    <div class="legend-item"><strong>Водные объекты:</strong> Вологод, Водосын, Болота Красноярский край 2025_OSM_poly</div>
+                    <div class="legend-item"><strong>Административное деление:</strong> Административно территориальное деление Красноярский край 2025</div>
+                </div>
+            </div>
+            <div class="metadata">
+                <strong>Масштаб:</strong> 1:13,500,000 | <strong>Система координат:</strong> WGS-84 косая азимутальная равноудаленная | <strong>Картограф:</strong> Синицина А.
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div class="map-title">4. Карта плотности зимников на территории субъектов СФО</div>
+            <div class="map-content">
+                <img src="F:\2\Плонтность_Зимников.jpg" alt="Карта плотности зимников" class="map-image">
+                <div class="map-legend">
+                    <div class="legend-item"><strong>Плотность зимников:</strong></div>
+                    <div class="legend-item">- &lt;0,001 км/2</div>
+                    <div class="legend-item">- 0,001 км/2</div>
+                    <div class="legend-item">- 0,002 км/2</div>
+                    <div class="legend-item">- 0,003 км/2</div>
+                    <div class="legend-item"><strong>Дорожная сеть:</strong> Автохимики СФО 2024 line_OSM</div>
+                    <div class="legend-item"><strong>Водные объекты:</strong> Вологоки СФО OSM_line, Волоски СФО NaturalEarth_poly</div>
+                </div>
+            </div>
+            <div class="metadata">
+                <strong>Масштаб:</strong> 1:13,500,000 | <strong>Система координат:</strong> WGS-84 косая азимутальная равноудаленная | <strong>Картограф:</strong> Синицина А.
+            </div>
+        </div>
+
+        <div class="footer">
+            Картографические материалы подготовлены картографом Синициной А. © 2025
+        </div>
+    </div>
+</body>
+</html>
